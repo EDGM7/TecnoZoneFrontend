@@ -1,0 +1,305 @@
+.topbar-link {
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  color: #fff; /* Establece el color del texto */
+  padding: 8px 12px; /* Ajusta el espaciado interno */
+  border-radius: 3px;
+
+}
+/* Estilos para los botones en la barra lateral */
+.sidebar-link,
+.sidebar-link button {
+  background-color: #333; /* Color de fondo */
+  text-decoration: none; /* Elimina el subrayado */
+  color: #fff; /* Color del texto */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 3px; /* Borde redondeado */
+  display: block; /* Hacer que los botones ocupen todo el ancho */
+  border: none; /* Quitar el borde */
+  outline: none; /* Quitar el contorno */
+}
+
+/* Estilos cuando se pasa el cursor sobre los enlaces y botones */
+.sidebar-link:hover,
+.sidebar-link:active,
+.sidebar-link button:hover,
+.sidebar-link button:active,
+.topbar-link:hover,
+.topbar-link:active,
+.topbar-link button:hover,
+.topbar-link button:active {
+  background-color: #c94301; /* Cambia el color de fondo al pasar el cursor o hacer clic */
+}
+
+
+
+/* Agrega estilos para la tabla de usuarios */
+.lista-usuarios {
+  margin-top: 20px; /* Ajusta el margen superior */
+}
+
+.lista-usuarios table {
+  width: 100%; /* Establece el ancho de la tabla al 100% del contenedor */
+}
+
+.lista-usuarios th,
+.lista-usuarios td {
+  padding: 8px; /* Ajusta el espaciado interno de las celdas */
+  text-align: center; /* Centra el texto en las celdas */
+}
+
+.lista-usuarios th {
+  background-color: #343a40; /* Establece el color de fondo de las celdas de encabezado */
+  color: #fff; /* Establece el color del texto en las celdas de encabezado */
+}
+
+.lista-usuarios tbody tr:nth-child(even) {
+  background-color: #f8f9fa; /* Alterna el color de fondo de las filas pares */
+}
+
+.lista-usuarios tbody tr:hover {
+  background-color: #e9ecef; /* Cambia el color de fondo al pasar el cursor sobre las filas */
+}
+
+.lista-usuarios button {
+  margin-right: 5px; /* Ajusta el margen derecho entre los botones */
+}
+
+/* Estilos para la galería de productos */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Alinea los elementos con espacio entre ellos */
+  margin-top: 20px; /* Espacio arriba de la galería */
+  background-color: #f3f3f3; /* Color de fondo de la galería */
+  padding: 20px; /* Espacio interno de la galería */
+}
+.producto {
+  flex: 0 0 calc(20% - 20px); /* 20% de ancho para cada producto, con 20px de espacio entre ellos */
+  margin-bottom: 20px; /* Espacio abajo de cada producto */
+  background-color: #fff; /* Color de fondo de cada producto */
+  padding: 15px; /* Espacio interno de cada producto */
+  border-radius: 5px; /* Bordes redondeados para cada producto */
+}
+
+/* Estilos para el título del producto */
+.titulo-producto {
+  font-size: 1.2rem; /* Tamaño de la fuente del título */
+}
+
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .producto {
+    flex-basis: calc(100% - 20px); /* Ancho completo para dispositivos móviles */
+  }
+}
+
+/* Estilos para el botón de favoritos */
+.favoritos-button {
+  background-color: transparent; /* Botón transparente */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* Estilos para el icono de estrella */
+.favoritos-button i {
+  color: #ffac33; /* Color de la estrella */
+  font-size: 1.2rem; /* Tamaño de la estrella */
+}
+
+.producto-card {
+  width: calc(33.33% - 20px); /* Ajusta el ancho de cada tarjeta */
+  background-color: #dfeacc; /* Cambia el color de fondo */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agrega transición */
+}
+
+.producto-card:hover {
+  transform: translateY(-5px); /* Agrega efecto de elevación al pasar el mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Cambia la sombra */
+}
+
+.producto-imagen {
+  width: 70%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.producto-contenido {
+  margin-top: 15px;
+}
+
+.producto-nombre {
+  font-size: 18px; /* Reduce el tamaño del título */
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #01361a;
+}
+
+.producto-descripcion {
+  font-size: 14px; /* Reduce el tamaño de la descripción */
+  margin-bottom: 10px;
+}
+
+.producto-categoria {
+  font-size: 14px;
+  color: #01361a;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.btn-favorito {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.3s ease; /* Agrega transición de color */
+}
+
+.btn-favorito:hover {
+  color: #f8d637; /* Cambia el color al pasar el mouse */
+}
+
+/*estilos para el componente filtro*/
+.filtros-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.filtros-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.filtro-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.filtro-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .filtros-container {
+    padding: 10px;
+  }
+
+  .filtros-title {
+    font-size: 18px;
+  }
+
+  .filtro-input,
+  .filtro-select {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+.filtros-flex-container {
+  display: flex;
+  gap: 10px; /* Espacio entre los elementos */
+}
+
+/* Ajusta el ancho de los filtros */
+.filtro-input,
+.filtro-select {
+  flex: 1; /* Todos los elementos se expanden para ocupar el mismo espacio */
+}
+
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+.filtros-container,
+.galeria-productos-container {
+  width: 100%;
+}
+
+/* Estilos para el modal */
+/* Estilos para el botón de detalle */
+.btn-detalle {
+  background-color: #4CAF50; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none; /* Borde */
+  border-radius: 4px; /* Borde redondeado */
+  cursor: pointer; /* Cursor al pasar el ratón */
+  outline: none; /* Sin contorno al hacer clic */
+  transition: background-color 0.3s; /* Transición de color de fondo */
+}
+
+/* Estilos para el botón de detalle al pasar el ratón */
+.btn-detalle:hover {
+  background-color: #45a049; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos para el modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  z-index: 9999; /* Asegura que el modal esté encima de otros elementos */
+}
+
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+/********************/
+/* formas de pago modal*/
+.formas-pago {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.formas-pago span {
+  font-size: 24px;
+}
+
+.icon-visa:before {
+  content: '\f1f0'; /* Código de Unicode para el icono de Visa */
+  font-family: 'FontAwesome';
+}
+
+.icon-mastercard:before {
+  content: '\f1f1'; /* Código de Unicode para el icono de Mastercard */
+  font-family: 'FontAwesome';
+}
+
+.icon-paypal:before {
+  content: '\f1ed'; /* Código de Unicode para el icono de PayPal */
+  font-family: 'FontAwesome';
+}
