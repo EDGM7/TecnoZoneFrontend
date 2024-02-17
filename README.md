@@ -31,5 +31,8 @@ Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
 4. Sube tus cambios a la rama (`git push origin feature/nueva-funcionalidad`).
 5. Crea un nuevo Pull Request.
 
-Proyecto Desarrollado Por Elias Guillen Estudiante de Pregado Universidad Valle del Momboy
+Proyecto Desarrollado Por Elias Guillen Estudiante de Universidad Valle del Momboy
+Link de maquetacion en figma https://www.figma.com/file/E7iSdoxCythNFRHeS2CRlb/Maquetacion-de-Tecnozone?type=design&t=t7f5J2tGWYhe3hEd-6
+
+https://github.com/EDGM7/TecnoZoneBackend.git link del repositorio del backend
 
